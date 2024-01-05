@@ -1,5 +1,6 @@
-             document.addEventListener("DOMContentLoaded", function () {
-         // Sample job listings (replace with actual data from your backend)
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+        // Sample job listings (replace with actual data from your backend)
         const jobListingsData = [
             { title: "Software Developer", industry: "Technology", location: "Doha Qatar", company: "TechCorp", salary: "$80,000 - $100,000", description: "need of an experienced software developer", requirements: " 3+ years of experience is scalable software" },
             { title: "PUblic Accountant", industry: "Marketing", location: "Gulf", company: "MarketingPro", salary: "$60,000 - $80,000", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", requirements: "Bachelor's degree, excellent communication skills" },
@@ -46,4 +47,21 @@
             });
         }
     });
-    
+    function openChat() {
+            // Add your logic to open a chat window
+            alert("Open chat functionality goes here.");
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+        // Function to toggle the visibility of the "Talk with us" icon
+        function toggleTalkWithUs() {
+            const talkWithUs = document.getElementById("talkWithUs");
+            talkWithUs.style.display = (talkWithUs.style.display === 'none' || talkWithUs.style.display === '') ? 'block' : 'none';
+        }
+
+        // Initial toggle after the page loads
+        toggleTalkWithUs();
+
+        // Set interval to toggle the "Talk with us" icon every 2 seconds
+        setInterval(toggleTalkWithUs, 2000);
+    });
+    </script>
