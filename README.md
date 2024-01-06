@@ -1,4 +1,4 @@
-# Bayt Staffing Solutions
+# Bayt-Staffing Solutions
 Hello there Developer,? This is levius wafula, due to the knowlwdge i got from reading about web technologies on responsive web design,
 i deceide to make this beautifull site for one of my clients in Gulf(middle-east).
 Welcome to Bayt Staffing Solutions, an online job search website that connects job seekers with employers looking to hire. This platform aims to provide a seamless experience for users to find their dream jobs and for employers to discover qualified candidates.
