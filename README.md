@@ -21,10 +21,9 @@ Welcome to Bayt Staffing Solutions, an online job search website that connects j
 - **Backend**: PHP
 - **Database**: MySQL
 - **Additional Libraries**: Font Awesome, Google Fonts
-
+ N/B(Admin panel code contribution by my friend-developer @emmanuel-juma)
 ## Setup Instructions
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/leviuswafula/bayt-staffing-solutions.git
-   N/B(Admin panel code contribution by my friend-developer @emmanuel-juma)
