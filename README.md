@@ -1,5 +1,30 @@
-# Bayt-staffing solutions
-Online platform for job search..
-Hello there developer i developed this website for the online job-search mostly in the Gulf and the middle east plus the rest of the world.
-its a project any programmer can cotribute the code and feel free to modify and pull request i will go through it and 
-update... thank you for your time to go through my Readme.
+# Bayt Staffing Solutions
+Hello there Developer,? This is levius wafula, due to the knowlwdge i got from reading about web technologies on responsive web design,
+i deceide to make this beautifull site for one of my clients in Gulf(middle-east).
+Welcome to Bayt Staffing Solutions, an online job search website that connects job seekers with employers looking to hire. This platform aims to provide a seamless experience for users to find their dream jobs and for employers to discover qualified candidates.
+
+## Features
+
+- **User-Friendly Interface**: An intuitive and easy-to-navigate interface for both job seekers and employers.
+
+- **Advanced Job Search**: Search among thousands of active jobs in the Gulf and the Middle East, with advanced filtering options.
+
+- **Job Listings**: Explore detailed job listings, including industry, location, company information, salary, description, and requirements.
+
+- **Subscription Service**: Stay informed about the latest job opportunities by subscribing to premium packages.
+
+- **Admin Panel**: Secure admin login to manage job listings and user accounts.
+
+## Technologies Used
+
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: PHP
+- **Database**: MySQL
+- **Additional Libraries**: Font Awesome, Google Fonts
+
+## Setup Instructions
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/leviuswafula/bayt-staffing-solutions.git
+   N/B(Admin panel code contribution by my friend-developer @emmanuel-juma)
