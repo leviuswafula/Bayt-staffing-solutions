@@ -8,277 +8,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://kit.fontawesome.com/e27b8dca8c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="/styles.css">
-    <style>
-        body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-header {
-    background-color: #2554C7;
-    color: white;
-    padding: 2em 100px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-section {
-    padding: 20px 0;
-}
-
-input[type="text"] {
-    padding: 10px;
-    font-size: 16px;
-}
-
-.job-listings {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.job-card {
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin: 10px;
-    padding: 15px;
-    width: calc(33.33% - 20px);
-}
-
-footer {
-    background-color: #b5b5b5;
-    color: rgb(44, 1, 70);
-    padding: 100px 0;
-    text-align: left;
-}
-
-.social-icons a {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-nav a:hover {
-    color: #FFD700; /*will Change to my desired hover color here */
-}
-
-.social-icons a:hover {
-    filter: brightness(1.5); /* Adjust brightness for hover effect here */
-}
-
-button:hover {
-    background-color: #555; 
-}
-
-/* Additional hover styles can be added as needed */
-
-.dropdown {
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 100px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #f9f9f9;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-    filter: brightness(1.5); /* Adjust as needed */
-}
-
-
-.text-center {
-    text-align: center;
-}
-
-#search h2 {
-    color: #333;
-    font-size: 36px;
-}
-
-#search h3 {
-    color: #666;
-    font-size: 20px;
-    margin-top: 10px;
-}
-
-#subscription {
-    background-color: #f9f9f9;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#subscription h2 {
-    color: #333;
-}
-
-#subscription p {
-    color: #666;
-    margin-bottom: 10px;
-}
-
-.subscription-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.subscription-form input {
-    padding: 6px;
-    font-size: 12px;
-    flex: 1;
-}
-
-.subscription-form button {
-    background-color: #262627;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    padding: 8px 6px;
-    font-size: 12px;
-    cursor: pointer;
-}
-
-.subscription-form button:hover {
-    background-color: #0d0e6d;
-}
-
-.login button {
-    background-color: #262627;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    padding: 8px 6px;
-    font-size: 12px;
-    cursor: pointer;
-}
-
-.talk-with-us {
-    position: fixed;
-    bottom: 40px;
-    right: 5px;
-    background-color: #f4f4f4; /*where i Adjust the background color as needed */
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 100px;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    z-index: 1000;
-}
-
-.sms-icon {
-    margin-right: 4px;
-}
-
-/* Hover styles */
-.talk-with-us:hover {
-    background-color: #0056b3; /* Adjust the hover background color as needed */
-}
-
-#get-app {
-    margin-top: 30px;
-    text-align: center;
-}
-
-#get-app h4 {
-    color: #2554C7;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.app-icons img {
-    width: 120px; /* Adjust the size as needed */
-    margin-right: 10px;
-    text-align: center;
-}
-
-.qr-code {
-    margin-top: 10px;
-    text-align: center;
-}
-
-.qr-code img {
-    width: 150px; /* Adjust the size as needed */
-}
-
-.qr-code p {
-    color: #666;
-    font-size: 14px;
-}
-
-#company-links {
-    margin-top: 30px;
-}
-
-#company-links h4 {
-    color: #2554C7;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-#company-links ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-#company-links li {
-    margin-bottom: 8px;
-}
-
-#company-links a {
-    color: #666;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-#company-links a:hover {
-    color: #2554C7;
-}
-
-
-
-    </style>
-</head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <script src="fix.js"></script>   
+   
+</head> 
 <body>
 
     <header>
@@ -324,6 +58,7 @@ button:hover {
         <div class="job-listings" id="jobListings">
             <!-- Job listings will be dynamically added here using JavaScript -->
         </div>
+      
     </section>
     <div class="talk-with-us">
         <a href="sms:+254713713176">
@@ -378,7 +113,7 @@ button:hover {
         </div>
     </footer>
     
-    <script>
+    <!-- <script>
         document.addEventListener("DOMContentLoaded", function () {
         // Sample job listings (replace with actual data from your backend)
         const jobListingsData = [
@@ -426,8 +161,8 @@ button:hover {
                 jobListingsContainer.appendChild(jobCard);
             });
         }
-    });
-    function openChat() {
+     });
+     function openChat() {
             // Add your logic to open a chat window
             alert("Open chat functionality goes here.");
         }
@@ -443,8 +178,8 @@ button:hover {
 
         // Set interval to toggle the "Talk with us" icon every 2 seconds
         setInterval(toggleTalkWithUs, 2000);
-    });
-    </script>
+      });
+    </script> -->
 <script src="script.js"></script>
 </body>
 </html>
