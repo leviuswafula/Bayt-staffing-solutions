@@ -1,5 +1,5 @@
-<script>
-        document.addEventListener("DOMContentLoaded", function () {
+
+document.addEventListener("DOMContentLoaded", async function () {
         // Sample job listings (replace with actual data from your backend)
         const jobListingsData = [
             { title: "Software Developer", industry: "Technology", location: "Doha Qatar", company: "TechCorp", salary: "$80,000 - $100,000", description: "need of an experienced software developer", requirements: " 3+ years of experience is scalable software" },
@@ -15,17 +15,22 @@
     
         const jobListingsContainer = document.getElementById("jobListings");
         const jobSearchInput = document.getElementById("jobSearch");
+
+        let url  = 'http://127.0.0.1:8080/jobs/';        
+            let response_data = await fetch(url); 
     
-        // Initial job listings display
-        displayJobListings(jobListingsData);
-    
-        // Filter job listings based on user input
-        jobSearchInput.addEventListener("input", function () {
-            const searchTerm = jobSearchInput.value.toLowerCase();
-            const filteredListings = jobListingsData.filter(job => job.title.toLowerCase().includes(searchTerm));
-            displayJobListings(filteredListings);
-        });
-    
+           
+            if (response_data.status === 200) {  
+                let fetchedData = await response_data.json();
+                displayJobListings(fetchedData);
+
+                jobSearchInput.addEventListener("input", function () {
+                    const searchTerm = jobSearchInput.value.toLowerCase();
+                    const filteredListings = fetchedData.filter(job => job.name.toLowerCase().includes(searchTerm));
+                    displayJobListings(filteredListings);
+                });
+                }
+                
         // Function to display job listings
         function displayJobListings(listings) {
             jobListingsContainer.innerHTML = "";
@@ -35,11 +40,11 @@
                 const jobCard = document.createElement("div");
                 jobCard.classList.add("job-card");
                 jobCard.innerHTML = `
-                    <h3>${job.title}</h3>
+                    <h3>${job.name}</h3>
                     <p>Industry: ${job.industry}</p>
                     <p>Location: ${job.location}</p>
                     <p>Company: ${job.company}</p>
-                    <p>Salary: ${job.salary}</p>
+                    <p>Salary: ${job.salary}</p>    
                     <p>Description: ${job.description}</p>
                     <p>Requirements: ${job.requirements}</p>
                 `;
@@ -64,4 +69,4 @@
         // Set interval to toggle the "Talk with us" icon every 2 seconds
         setInterval(toggleTalkWithUs, 2000);
     });
-    </script>
+    
