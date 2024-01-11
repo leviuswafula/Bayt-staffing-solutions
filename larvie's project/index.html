@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bayt Staffing Solutions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bayt-Staffing Solutions</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="https://kit.fontawesome.com/e27b8dca8c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="href=//https.google.com/search?q=google-play-icon.png%2C+app-store-icon.png%2C+bayt-app-qr-code.png&rlz=1C1YTUH_enKE1088KE1088&oq=google-play-icon.png%2C+app-store-icon.png%2C+bayt-app-qr-code.png&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDEwNzNqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
     <style>
+        
         body {
-    font-family: Arial, sans-serif;
+    font-family: verdana, geneva, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -23,7 +31,7 @@
 }
 
 header {
-    background-color: #2554C7;
+    background-color: #1ad949;
     color: white;
     padding: 2em 100px;
 }
@@ -82,11 +90,11 @@ footer {
 }
 
 nav a:hover {
-    color: #FFD700; /*will Change to my desired hover color here */
+    color: #0e0c85; /*will Change to my desired hover color here */
 }
 
 .social-icons a:hover {
-    filter: brightness(1.5); /* Adjust brightness for hover effect here */
+    filter: brightness(1.5); 
 }
 
 button:hover {
@@ -142,8 +150,8 @@ button:hover {
 
 #subscription {
     background-color: #f9f9f9;
-    padding: 40px;
-    border-radius: 8px;
+    padding: 10px;
+    border-radius: 2px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -194,7 +202,7 @@ button:hover {
 
 .talk-with-us {
     position: fixed;
-    bottom: 40px;
+    bottom: 60px;
     right: 5px;
     background-color: #f4f4f4; /*where i Adjust the background color as needed */
     color: #fff;
@@ -211,7 +219,7 @@ button:hover {
 
 /* Hover styles */
 .talk-with-us:hover {
-    background-color: #0056b3; /* Adjust the hover background color as needed */
+    background-color: #0056b3; 
 }
 
 #get-app {
@@ -275,50 +283,152 @@ button:hover {
     color: #2554C7;
 }
 
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 1em 20px;
+    }
 
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .job-card {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    section {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .job-card {
+        width: 100%;
+    }
+
+    footer {
+        padding: 50px 10px;
+    }
+}
+
+/* Dark/Light Mode Switch Styles */
+.dark-mode-switch {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+.dark-mode-switch .sun {
+    display: none;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode-switch.dark-mode .moon {
+    display: none;
+}
+
+.dark-mode-switch.dark-mode .sun {
+    display: inline-block;
+}
+
+/*my Toggle styles for dark mode */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode input[type="text"] {
+    background-color: #444;
+    color: #fff;
+}
+
+body.dark-mode footer {
+    background-color: #111;
+    color: #fff;
+}
+
+
+    footer {
+      
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #payment-modes {
+        text-align: right; 
+    }
+
+    .payment-icons {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .payment-icons img {
+        margin-left: 10px; 
+    }
 
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li class="dropdown">
-                        <a href="javascript:void(0)" class="dropbtn">Find jobs</a>
-                        <div class="dropdown-content">
-                            <a href="#">job link ups</a>
-                            <a href="#">Employment Updates </a>
-                            <a href="#">job connect</a> 
-                            <!-- Add more services as needed -->
-                        </div>
-                    </li>
-                    <li><a href="#search">Search Jobs</a></li>
-                    <li><a href="#job-listings">Job Listings</a></li>
-                    <li><a href="#login">Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Register&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-                    <!-- Add more navigation links as needed -->
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <header class="header">
+    <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo">bayt-staff</div>
 
+        <!-- Navigation links -->
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Find Jobs</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Insights</a></li>
+            <li><a href="#">CV Services</a></li>
+            <!-- Add other navigation links as per your requirement -->
+        </ul>
+
+        <!-- User actions -->
+        <div class="user-actions">
+            <button class="login-btn">Log In</button>
+            <button class="register-btn">Register</button>
+            <button class="employers-btn">For Employers</button>
+            <!-- Add login/register buttons or user avatar as per your requirement -->
+        </div>
+    </nav>
+</header>
     <section id="search" class="container text-center">
-        <h2>Find Your Dream Job with us Today</h2>
-        <h3><i>Search among 40,000+ Active jobs in the Gulf & the Middle East #No.1 job search site</i></h3>
+        <h2>subscribe to find your dream job in the Gulf & the Middle East.</h2>
+        <h3><i>over 60,000 + jobs listed in our site</i></h3>
         <input type="text" id="jobSearch" placeholder="Search for jobs...">
     </section>
     <section id="subscription" class="container text-center">
-        <h2>Subscribe for more Job Updates</h2>
-        <p>Stay informed about the latest job opportunities. Subscribe to premium package to view and apply for your desired job.</p>
+        <h2>Subscribe for more Job updates</h2>
+        <p>Stay informed about the latest job opportunities.<br> Subscribe to premium package to view and apply for your desired job.</br></p>
         <form action="#" method="post" class="subscription-form">
             <input type="email" name="email" placeholder="Your Email" required>
             <button type="submit">Subscribe</button>
         </form>
     </section>
-
+    <div id="jobListingsContainer"></div>
     <section id="job-listings" class="container">
         <h2>Job Listings</h2>
         <div class="job-listings" id="jobListings">
@@ -326,24 +436,28 @@ button:hover {
         </div>
     </section>
     <div class="talk-with-us">
-        <a href="sms:+254713713176">
+        <a href="https://wa.me/254 758 298073">
             <span class="sms-icon"><i class="fas fa-comment-alt"></i></span>
             <span class="button-text">Talk with us</span>
         </a>
     </div>
     <div class="talk-with-us" id="talkWithUs">
-        <a href="sms:+1234567890">
-            <span class="sms-icon"><i class="fas fa-comment-alt"></i></span>
-            <span class="button-text">Talk with us</span>
+        <a href="sms:+254 758 298073">
+            <span class="button-text"><i>lets chat</i></span>
         </a>
     </div>
-
+    <!-- Dark/Light Mode Switch -->
+<div class="dark-mode-switch" id="darkModeSwitch" onclick="toggleDarkMode()">
+    <span class="moon">&#9790;</span>
+    <p>switch modes</p>
+    <span class="star">&#9728;</span>
+</div>
 
     <footer>
          <!-- About Bayt.com -->
-         <div id="about-bayt">
-            <h4> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; About Bayt-Staffing.com</h4>
-            <p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Bayt.com is the leading job site in the Middle East and North Africa,<br>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; connecting job seekers with employers looking to hire.</br>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Every day,thousands of new job vacancies are listed on the<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; award-winning platform from the region's top employers.</br>
+         <div id="about-bayt-staffing">
+            &nbsp; &nbsp; &nbsp;<h4>&nbsp; &nbsp;About Bayt-Staffing.com</h4>
+            <p> &nbsp; &nbsp; &nbsp;&nbsp; Bayt.com is the leading job site in the Middle East and North Africa,<br>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; connecting job seekers with employers looking to hire.</br>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Every day,thousands of new job vacancies are listed on the<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;award-winning platform from the region's top employers.</br>
             </p>
         </div>
         
@@ -351,8 +465,8 @@ button:hover {
          <div id="get-app">
             <h4>Get the Bayt-Staffing App</h4>
             <div class="app-icons">
-                <img src="google-play-icon.png, app-store-icon.png, bayt-app-qr-code.png" alt="Google Play">
-                <img src="google-play-icon.png, app-store-icon.png, bayt-app-qr-code.png" alt="App Store">
+                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM127 384.5c-5.5 9.6-17.8 12.8-27.3 7.3-9.6-5.5-12.8-17.8-7.3-27.3l14.3-24.7c16.1-4.9 29.3-1.1 39.6 11.4L127 384.5zm138.9-53.9H84c-11 0-20-9-20-20s9-20 20-20h51l65.4-113.2-20.5-35.4c-5.5-9.6-2.2-21.8 7.3-27.3 9.6-5.5 21.8-2.2 27.3 7.3l8.9 15.4 8.9-15.4c5.5-9.6 17.8-12.8 27.3-7.3 9.6 5.5 12.8 17.8 7.3 27.3l-85.8 148.6h62.1c20.2 0 31.5 23.7 22.7 40zm98.1 0h-29l19.6 33.9c5.5 9.6 2.2 21.8-7.3 27.3-9.6 5.5-21.8 2.2-27.3-7.3-32.9-56.9-57.5-99.7-74-128.1-16.7-29-4.8-58 7.1-67.8 13.1 22.7 32.7 56.7 58.9 102h52c11 0 20 9 20 20 0 11.1-9 20-20 20z"/></svg>
             </div>
             <div class="qr-code">
                 <img src="bayt-app-qr-code.png" alt="Bayt App QR Code">
@@ -363,7 +477,6 @@ button:hover {
         <div class="container">
             <p>&copy; 2024 Bayt Staffing Solutions. All rights reserved.</p>
             <p>Terms of Use·Privacy Policy·Cookie Policy·Security Message</p>
-    
             <!-- Social media icons -->
             <div class="social-icons">
                 <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -376,21 +489,40 @@ button:hover {
                 <!-- Add more social media icons as needed -->
             </div>
         </div>
+                <!-- Payment Modes -->
+                <div id="payment-modes">
+                    <h4>Accepted Payment Methods</h4>
+                    <div class="payment-icons">
+                        <!-- Add icons or images for accepted payment methods -->
+                        <img src="visa-icon.png" alt="Visa">
+                        <img src="mastercard-icon.png" alt="Mastercard">
+                        <img src="paypal-icon.png" alt="PayPal">
+                        <!-- Add more payment icons as needed -->
+                    </div>
+                </div>
+        
     </footer>
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
     
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-        // Sample job listings (replace with actual data from your backend)
+        //  job listings  data from my backend)
         const jobListingsData = [
-            { title: "Software Developer", industry: "Technology", location: "Doha Qatar", company: "TechCorp", salary: "$80,000 - $100,000", description: "need of an experienced software developer", requirements: " 3+ years of experience is scalable software" },
-            { title: "PUblic Accountant", industry: "Marketing", location: "Gulf", company: "MarketingPro", salary: "$60,000 - $80,000", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", requirements: "Bachelor's degree, excellent communication skills" },
-            { title: "IT specialist", industry: "Technology", location: "United States", company: "TechCorp", salary: "$80,000 - $100,000", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", requirements: "Bachelor's degree, 3+ years of experience" },
-            { title: "Civil Engineer", industry: "PLumb-pro", location: "Qatar", company: "plumbing site", salary: "$60,000 - $80,000", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", requirements: "Bachelor's degree, excellent communication skills" },
-            { title: "Software Architecht", industry: "Technology", location: "United States", company: "TechCorp", salary: "$80,000 - $100,000", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", requirements: "Bachelor's degree, 3+ years of experience" },
-            { title: "Data Analyst", industry: "Technology", location: "Saudi", company: "Doha-tech", salary: "$60,000 - $80,000", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", requirements: "Bachelor's degree, excellent communication skills" },
-            { title: "electrical engineer", industry: "Technology", location: "United States", company: "TechCorp", salary: "$80,000 - $100,000", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", requirements: "Bachelor's degree, 3+ years of experience" },
-            { title: "medical Specialist", industry: "medicine", location: "Dooha", company: "DohamedicsPro", salary: "$60,000 - $80,000", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", requirements: "Bachelor's degree, excellent communication skills" },
-            // here is where i add my job listings.
+        { title: "Software Developer", industry: "Technology", location: "Doha Qatar", company: "TechCorp", salary: "$75,000 - $80,000", description: "need of an experienced software developer", requirements: " 3+ years of experience is scalable software" },
+        { title: "PUblic Accountant", industry: "Marketing", location: "Gulf", company: "MarketingPro", salary: "$45,000 - $50,000", description: "certified public accountant.", requirements: "Bachelor's degree, excellent communication skills" },
+        { title: "IT specialist", industry: "Technology", location: "United States", company: "TechCorp", salary: "$20,000 - $25,000", description: "computer person.", requirements: "bachelor,Dip.,Cert or Artisan 1+ years of experience" },
+        { title: "Civil Engineer", industry: "PLumb-pro", location: "Qatar", company: "plumbing site", salary: "$30,000 - $50,000", description: "plumbers & surveyers.", requirements: "3 years + experience" },
+        { title: "Software Architecht", industry: "Technology", location: "United States", company: "TechCorp", salary: "$70,000 - $100,000", description: "software engineers.", requirements: " 3+ years of experience in building scalable softwares" },
+        { title: "Data Analyst", industry: "Technology", location: "Saudi", company: "Doha-tech", salary: "$42,000 - $45,000", description: "Data scientist in need.", requirements: "Data science cert and 3 yrs + of experience" },
+        { title: "electrical engineer", industry: "Technology", location: "United States", company: "TechCorp", salary: "$80,000 - $100,000", description: " electrical engineering .", requirements: "any collage proof of electrical engineering course" },
+        { title: "medical Specialist", industry: "medicine", location: "Dooha", company: "DohamedicsPro", salary: "$40,000 - $45,000", description: "medics.", requirements: "Bachelor's /Diploma/cert/ disciplined" },
+        { title: "security officer", industry: "Doha-security", location: "Doha-qatar", company: "Dohasecurity", salary: "10,000 - $15,000", description: "house guard", requirements: "Well Discipline & excellent communication skills" },
+        // here is where i add my job listings.
         ];
     
         const jobListingsContainer = document.getElementById("jobListings");
@@ -444,6 +576,45 @@ button:hover {
         // Set interval to toggle the "Talk with us" icon every 2 seconds
         setInterval(toggleTalkWithUs, 2000);
     });
+
+    // Fetch job listings using AJAX and update the content
+    fetch('get_jobs.php')
+        .then(response => response.json())
+        .then(data => {
+            const jobListingsContainer = document.getElementById('jobListingsContainer');
+            data.forEach(job => {
+                const jobCard = document.createElement('div');
+                jobCard.classList.add('job-card');
+                jobCard.innerHTML = `
+                    <h3>${job.title}</h3>
+                    <p>Industry: ${job.industry}</p>
+                    <p>Location: ${job.location}</p>
+                    <p>Company: ${job.company}</p>
+                    <p>Salary: ${job.salary}</p>
+                    <p>Description: ${job.description}</p>
+                    <p>Requirements: ${job.requirements}</p>
+                `;
+                jobListingsContainer.appendChild(jobCard);
+            });
+        })
+        .catch(error => console.error('Error fetching job listings:', error));
+    function toggleDarkMode() {
+        const body = document.body;
+        body.classList.toggle("dark-mode");
+
+        // Save the dark mode preference to local storage
+        const isDarkMode = body.classList.contains("dark-mode");
+        localStorage.setItem("darkMode", isDarkMode);
+    }
+
+    // Check for dark mode preference on page load
+    document.addEventListener("DOMContentLoaded", function () {
+        const darkModePreference = localStorage.getItem("darkMode");
+        if (darkModePreference === "true") {
+            document.body.classList.add("dark-mode");
+        }
+    });
+
     </script>
 <script src="script.js"></script>
 </body>
