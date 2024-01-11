@@ -10,14 +10,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-<<<<<<< HEAD
-    <script src="https://kit.fontawesome.com/e27b8dca8c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
-     
-   
-</head> 
-=======
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -25,379 +17,10 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 
     <style>
-        
-        body {
-    font-family: verdana, geneva, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-header {
-    background-color: #1ad949;
-    color: white;
-    padding: 2em 100px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-section {
-    padding: 20px 0;
-}
-
-input[type="text"] {
-    padding: 10px;
-    font-size: 16px;
-}
-
-.job-listings {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.job-card {
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin: 10px;
-    padding: 15px;
-    width: calc(33.33% - 20px);
-}
-
-footer {
-    background-color: #b5b5b5;
-    color: rgb(44, 1, 70);
-    padding: 100px 0;
-    text-align: left;
-}
-
-.social-icons a {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-nav a:hover {
-    color: #0e0c85; /*will Change to my desired hover color here */
-}
-
-.social-icons a:hover {
-    filter: brightness(1.5); 
-}
-
-button:hover {
-    background-color: #555; 
-}
-
-/* Additional hover styles can be added as needed */
-
-.dropdown {
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 100px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #f9f9f9;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-    filter: brightness(1.5); /* Adjust as needed */
-}
-
-
-.text-center {
-    text-align: center;
-}
-
-#search h2 {
-    color: #333;
-    font-size: 36px;
-}
-
-#search h3 {
-    color: #666;
-    font-size: 20px;
-    margin-top: 10px;
-}
-
-#subscription {
-    background-color: #f9f9f9;
-    padding: 10px;
-    border-radius: 2px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#subscription h2 {
-    color: #333;
-}
-
-#subscription p {
-    color: #666;
-    margin-bottom: 10px;
-}
-
-.subscription-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.subscription-form input {
-    padding: 6px;
-    font-size: 12px;
-    flex: 1;
-}
-
-.subscription-form button {
-    background-color: #262627;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    padding: 8px 6px;
-    font-size: 12px;
-    cursor: pointer;
-}
-
-.subscription-form button:hover {
-    background-color: #0d0e6d;
-}
-
-.login button {
-    background-color: #262627;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    padding: 8px 6px;
-    font-size: 12px;
-    cursor: pointer;
-}
-
-.talk-with-us {
-    position: fixed;
-    bottom: 60px;
-    right: 5px;
-    background-color: #f4f4f4; /*where i Adjust the background color as needed */
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 100px;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    z-index: 1000;
-}
-
-.sms-icon {
-    margin-right: 4px;
-}
-
-/* Hover styles */
-.talk-with-us:hover {
-    background-color: #0056b3; 
-}
-
-#get-app {
-    margin-top: 30px;
-    text-align: center;
-}
-
-#get-app h4 {
-    color: #2554C7;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.app-icons img {
-    width: 120px; /* Adjust the size as needed */
-    margin-right: 10px;
-    text-align: center;
-}
-
-.qr-code {
-    margin-top: 10px;
-    text-align: center;
-}
-
-.qr-code img {
-    width: 150px; /* Adjust the size as needed */
-}
-
-.qr-code p {
-    color: #666;
-    font-size: 14px;
-}
-
-#company-links {
-    margin-top: 30px;
-}
-
-#company-links h4 {
-    color: #2554C7;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-#company-links ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-#company-links li {
-    margin-bottom: 8px;
-}
-
-#company-links a {
-    color: #666;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-#company-links a:hover {
-    color: #2554C7;
-}
-
-/* Responsive Styles */
-@media only screen and (max-width: 768px) {
-    header {
-        padding: 1em 20px;
-    }
-
-    nav ul {
-        text-align: center;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .job-card {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    section {
-        padding: 10px;
-    }
-
-    .container {
-        padding: 0 10px;
-    }
-
-    .job-card {
-        width: 100%;
-    }
-
-    footer {
-        padding: 50px 10px;
-    }
-}
-
-/* Dark/Light Mode Switch Styles */
-.dark-mode-switch {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    color: #fff;
-}
-
-.dark-mode-switch .sun {
-    display: none;
-}
-
-.dark-mode {
-    background-color: #333;
-    color: #fff;
-}
-
-.dark-mode-switch.dark-mode .moon {
-    display: none;
-}
-
-.dark-mode-switch.dark-mode .sun {
-    display: inline-block;
-}
-
-/*my Toggle styles for dark mode */
-body.dark-mode {
-    background-color: #333;
-    color: #fff;
-}
-
-body.dark-mode input[type="text"] {
-    background-color: #444;
-    color: #fff;
-}
-
-body.dark-mode footer {
-    background-color: #111;
-    color: #fff;
-}
-
-
-    footer {
-      
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    #payment-modes {
-        text-align: right; 
-    }
-
-    .payment-icons {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .payment-icons img {
-        margin-left: 10px; 
-    }
+    
 
     </style>
 </head>
->>>>>>> 60496e45162ed0a1a29ad9db6a6f8d2a8f830e42
 <body>
 
     <header class="header">
@@ -463,53 +86,81 @@ body.dark-mode footer {
     <span class="star">&#9728;</span>
 </div>
 
-    <footer>
+   <footer>
+    <div class="footer-top">
          <!-- About Bayt.com -->
-         <div id="about-bayt-staffing">
-            &nbsp; &nbsp; &nbsp;<h4>&nbsp; &nbsp;About Bayt-Staffing.com</h4>
-            <p> &nbsp; &nbsp; &nbsp;&nbsp; Bayt.com is the leading job site in the Middle East and North Africa,<br>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; connecting job seekers with employers looking to hire.</br>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Every day,thousands of new job vacancies are listed on the<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;award-winning platform from the region's top employers.</br>
-            </p>
-        </div>
-        
-         <!-- Get the Bayt App -->
-         <div id="get-app">
-            <h4>Get the Bayt-Staffing App</h4>
-            <div class="app-icons">
-                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM127 384.5c-5.5 9.6-17.8 12.8-27.3 7.3-9.6-5.5-12.8-17.8-7.3-27.3l14.3-24.7c16.1-4.9 29.3-1.1 39.6 11.4L127 384.5zm138.9-53.9H84c-11 0-20-9-20-20s9-20 20-20h51l65.4-113.2-20.5-35.4c-5.5-9.6-2.2-21.8 7.3-27.3 9.6-5.5 21.8-2.2 27.3 7.3l8.9 15.4 8.9-15.4c5.5-9.6 17.8-12.8 27.3-7.3 9.6 5.5 12.8 17.8 7.3 27.3l-85.8 148.6h62.1c20.2 0 31.5 23.7 22.7 40zm98.1 0h-29l19.6 33.9c5.5 9.6 2.2 21.8-7.3 27.3-9.6 5.5-21.8 2.2-27.3-7.3-32.9-56.9-57.5-99.7-74-128.1-16.7-29-4.8-58 7.1-67.8 13.1 22.7 32.7 56.7 58.9 102h52c11 0 20 9 20 20 0 11.1-9 20-20 20z"/></svg>
+         <div class="about-app">
+            <div id="about-bayt-staffing">
+                <h4>About Bayt-Staffing.com</h4>
+                <p>Bayt.com is the leading job site in the Middle East and North Africa,
+                 connecting job seekers with employers looking to hire.
+                Every day,thousands of new job vacancies are listed on the 
+                award-winning platform from the region's top employers.</p>
             </div>
+            <div class="social-media">
+                <h4>Follow Bayt.com</h4>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-weixin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+                </div>
+                <!-- Add more social media icons as needed -->
+            </div>
+         </div> 
+
+         <div class="company">
+            <h4>Company</h4>
+            <a href="#" >About Us</a>
+            <a href="#" >Contact Us</a>
+            <a href="#" >Careers</a>
+            <a href="#" >Press Corner</a>
+            <a href="#" >Advertise With Us</a> 
+         </div> 
+         <div class="quick-links">
+            <h4>Quick Links</h4>
+            <a href="#" >Blog</a>
+            <a href="#" >Help Center</a>
+            <a href="#" >Affiliate Program</a>
+          
+         </div>   
+          <!-- Get the Bayt App -->
+          <div id="get-app">
+            <h4>Get the Bayt App</h4>
+                <div class="app-icons">
+                    <div>
+                        <a href="#" >
+                            <img src="google-play.png" >
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" >
+                            <img src="appstore.png" >    
+                        </a>
+                    </div>
+                  
+                    
+                 </div>
             <div class="qr-code">
-                <img src="bayt-app-qr-code.png" alt="Bayt App QR Code">
-                <p>Scan the QR code to get the app</p>
+                <h4>Scan the QR code to get the app</h4>
+                <img src="qrcode.png" alt="Bayt App QR Code">
+                
             </div>
+       
+           
         </div>
-    </div>
-        <div class="container">
+    
+    </div> 
+        <div class="footer-bottom">
             <p>&copy; 2024 Bayt Staffing Solutions. All rights reserved.</p>
             <p>Terms of Use·Privacy Policy·Cookie Policy·Security Message</p>
             <!-- Social media icons -->
-            <div class="social-icons">
-                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-weixin"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
-                <!-- Add more social media icons as needed -->
-            </div>
+         
         </div>
-                <!-- Payment Modes -->
-                <div id="payment-modes">
-                    <h4>Accepted Payment Methods</h4>
-                    <div class="payment-icons">
-                        <!-- Add icons or images for accepted payment methods -->
-                        <img src="visa-icon.png" alt="Visa">
-                        <img src="mastercard-icon.png" alt="Mastercard">
-                        <img src="paypal-icon.png" alt="PayPal">
-                        <!-- Add more payment icons as needed -->
-                    </div>
-                </div>
+               
         
     </footer>
     <!-- Bootstrap CSS -->
@@ -519,7 +170,7 @@ body.dark-mode footer {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
     
-    <!-- <script>
+     <script>
         document.addEventListener("DOMContentLoaded", function () {
         //  job listings  data from my backend)
         const jobListingsData = [
@@ -585,10 +236,6 @@ body.dark-mode footer {
 
         // Set interval to toggle the "Talk with us" icon every 2 seconds
         setInterval(toggleTalkWithUs, 2000);
-<<<<<<< HEAD
-      });
-    </script> -->
-=======
     });
 
     // Fetch job listings using AJAX and update the content
@@ -630,7 +277,6 @@ body.dark-mode footer {
     });
 
     </script>
->>>>>>> 60496e45162ed0a1a29ad9db6a6f8d2a8f830e42
 <script src="script.js"></script>
 </body>
 </html>
