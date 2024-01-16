@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Choose your plan</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .header {
+      padding: 20px;
+      text-align: center;
+      background-color: #1abc9c;
+      color: white;
+    }
+
+    .header h1 {
+      font-size: 40px;
+    }
+
+    
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: #333;
+    }
+
+   
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+    }
+
+    
+    .card {
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      width: 300px;
+      margin: 10px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    
+    .card h3 {
+      font-size: 24px;
+    }
+
+    
+    .card p.price {
+      color: green;
+      font-size: 18px;
+    }
+
+    
+    .card ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    
+    .card li {
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+   
+    .card button {
+      border: none;
+      outline: none;
+      padding: 12px;
+      color: white;
+      background-color: #1abc9c;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .card button:hover {
+      background-color: #ddd;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Choose your payment plan</h1>
+    <p>Bayt-Staffing.com</p>
+  </div>
+  
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!--   main element with cards -->
+  <div class="main">
+    <div class="card">
+      <h3>Basic</h3>
+      <p class="price">free</p>
+      <ul>
+        <li>browse for more jobs</li>
+        <li>free access to premium jobs</li>
+        <li>Priority verification</li>
+      </ul>
+      <button>Subscribe</button>
+    </div>
+
+    <!-- heres a card for the premium plan -->
+    <div class="card">
+      <h3>Premium</h3>
+      <p class="price">free</p>
+      <ul>
+        <li>no ad bookmark</li>
+        <li>Access to premium jobs</li>
+        <li>All basic features</li>
+      </ul>
+      <button>Subscribe</button>
+    </div>
+
+    <!-- the  card for the premium+ plan -->
+    <div class="card">
+      <h3>Premium+</h3>
+      <p class="price">$15/month</p>
+      <ul>
+        <li>No ads in the For You timeline</li>
+        <li>Live chat with the Employers</li>
+        <li>Access to GURU X</li>
+        <li>All premium features</li>
+      </ul>
+      <button>Subscribe</button>
+    </div>
+  </div>
+</body>
+</html>

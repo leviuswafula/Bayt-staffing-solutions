@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bayt-Staffing Solutions</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="href=//https.google.com/search?q=google-play-icon.png%2C+app-store-icon.png%2C+bayt-app-qr-code.png&rlz=1C1YTUH_enKE1088KE1088&oq=google-play-icon.png%2C+app-store-icon.png%2C+bayt-app-qr-code.png&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDEwNzNqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="html" type="text/html" href="contact.html">
+    <link rel="html" type="text/html" href="registration.html">
+
+    <style> 
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+    <nav class="navbar">
+        <!-- Logo -->
+        <div class="logo">bayt-staff</div>
+
+        <!-- Navigation links -->
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Job Listings">Find Jobs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="subscription.html">subscription</a></li>
+            <li><a href="https://www.kickresume.com/">Resume Services</a></li>
+        </ul>
+
+        <!-- User actions -->
+        <div class="user-actions">
+            <button class="login-btn"><a href="login.html">Log In</a></button>
+            <button class="register-btn"><a href="registration.html">Register</a></button>
+            <button class="employers-btn"><a href=" http://localhost:3000/employer_register.html"></a> Employers</button>
+        </div>
+    </nav>
+</header>
+    <section id="search" class="container text-center">
+        <h2>subscribe to find your dream job in the Gulf & the Middle East.</h2>
+        <h3><i>over 60,000 + jobs listed in our site plus 41,000 sucessfull job Seekers</i></h3>
+        <input type="text" id="jobSearch" placeholder="Search for jobs...">
+    </section>
+    <section id="subscription" class="container text-center">
+        <h2>Subscribe for more Job updates</h2>
+        <p>Stay informed about the latest job opportunities.<br> Subscribe to premium package to view and apply for your desired job.</br></p>
+        <form action="#" method="post" class="subscription-form">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+    <div id="jobListingsContainer"></div>
+    <section id="job-listings" class="container">
+        <h2>Job Listings</h2>
+        <div class="job-listings" id="jobListings">
+            <!-- Job listings will be dynamically added here using JavaScript -->
+        </div>
+      
+    </section>
+    <div class="talk-with-us">
+        <a href="https://wa.me/254 713713176">
+            <span class="sms-icon"><i class="fas fa-comment-alt"></i></span>
+            <span class="button-text">Talk with us</span>
+        </a>
+    </div>
+    <div class="talk-with-us" id="talkWithUs">
+        <a href="https://twitter.com/BaytStaffing">
+            <span class="button-text"><i>lets chat</i></span>
+        </a>
+    </div>
+    <!-- Dark/Light Mode Switch -->
+<div class="dark-mode-switch" id="darkModeSwitch" onclick="toggleDarkMode()">
+    <span class="moon">&#9790;</span>
+    <p>switch-modes</p>
+    <span class="star">&#9728;</span>
+</div>
+
+   <footer>
+    <div class="footer-top">
+         <!-- About Bayt.com -->
+         <div class="about-app">
+            <div id="about-bayt-staffing">
+                <h4>About Bayt-Staffing.com</h4>
+                <p>Bayt-Staffing.com is the leading Job site in The Middle East and 
+                   North Africa,connecting job Seekers with Employers looking
+                   to hire.Every Day,thousands of new Job vacancies are listed on the
+                   Award-Winning platform from the Region's top employers.</p>
+            </div>
+            <div class="social-media">
+                <h4>Follow Bayt-staffing.com</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/baytstaffingsolutions" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/BaytStaffing" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/bayt-staffing-solutions-5171a6295/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-weixin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://twitter.com/BaytStaffing" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+         </div> 
+
+         <div class="company">
+            <h4>Company</h4>
+            <a href="#" >About Us</a>
+            <a href="contact.html" >Contact Us</a> 
+         </div> 
+         <div class="quick-links">
+            <h4>Quick Links</h4>
+            <a href="#" >Our Blog</a>
+          
+         </div>   
+          <!-- Get the Bayt App -->
+          <div id="get-app">
+            <h4>Get the Bayt App</h4>
+                <div class="app-icons">
+                    <div>
+                        <a href="https://play.google.com/store/apps?pli=1" >
+                            <img src="google-play.png" >
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://store.app/?gclid=Cj0KCQiAwP6sBhDAARIsAPfK_wYFl9xRNlqSMXa5QJ3z13agVl5g20bsCHVNp7_76Q3qU0VrXSDOowoaAgNZEALw_wcB" >
+                            <img src="appstore.png" >    
+                        </a>
+                    </div>
+                  
+                    
+                 </div>
+            <div class="qr-code">
+                <h4>Scan the QR code to get the app</h4>
+                <img src="qrcode.png" alt="Bayt App QR Code">
+                
+            </div>
+       
+           
+        </div>
+    
+    </div> 
+        <div class="footer-bottom">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &copy;2024 Bayt Staffing Solutions. All rights reserved.</p>
+            <p>Terms of Use·Privacy Policy·Cookie Policy·Security Message</p>
+            <!-- Social media icons -->
+         
+        </div>
+               
+        
+    </footer>
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    
+     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        //  job listings  data from my backend)
+        const jobListingsData = [
+        { title: "Software Developer", industry: "Technology", location: "Doha Qatar", company: "TechCorp", salary: "$75,000 - $80,000", description: "need of an experienced software developer", requirements: " 3+ years of experience is scalable software" },
+        { title: "Public Accountant", industry: "Marketing", location: "Gulf", company: "MarketingPro", salary: "$45,000 - $50,000", description: "certified public accountant.", requirements: "Bachelor's degree, excellent communication skills" },
+        { title: "IT specialist", industry: "Technology", location: "United States", company: "TechCorp", salary: "$20,000 - $25,000", description: "computer person.", requirements: "bachelor,Dip.,Cert or Artisan 1+ years of experience" },
+        { title: "Civil Engineer", industry: "PLumb-pro", location: "Qatar", company: "plumbing site", salary: "$30,000 - $50,000", description: "plumbers & surveyers.", requirements: "3 years + experience" },
+        { title: "Software Architecht", industry: "Technology", location: "United States", company: "TechCorp", salary: "$70,000 - $100,000", description: "software engineers.", requirements: " 3+ years of experience in building scalable softwares" },
+        { title: "Data Analyst", industry: "Technology", location: "Saudi", company: "Doha-tech", salary: "$42,000 - $45,000", description: "Data scientist in need.", requirements: "Data science cert and 3 yrs + of experience" },
+        { title: "electrical engineer", industry: "Technology", location: "United States", company: "TechCorp", salary: "$80,000 - $100,000", description: " electrical engineering .", requirements: "any collage proof of electrical engineering course" },
+        { title: "medical Specialist", industry: "medicine", location: "Dooha", company: "DohamedicsPro", salary: "$40,000 - $45,000", description: "medics.", requirements: "Bachelor's /Diploma/cert/ disciplined" },
+        { title: "security officer", industry: "Doha-security", location: "Doha-qatar", company: "Dohasecurity", salary: "10,000 - $15,000", description: "house guard", requirements: "Well Discipline & excellent communication skills" },
+        // here is where i add my job listings.
+        ];
+    
+        const jobListingsContainer = document.getElementById("jobListings");
+        const jobSearchInput = document.getElementById("jobSearch");
+    
+        // Initial job listings display
+        displayJobListings(jobListingsData);
+    
+        // Filter job listings based on user input
+        jobSearchInput.addEventListener("input", function () {
+            const searchTerm = jobSearchInput.value.toLowerCase();
+            const filteredListings = jobListingsData.filter(job => job.title.toLowerCase().includes(searchTerm));
+            displayJobListings(filteredListings);
+        });
+    
+        // Function to display job listings
+        function displayJobListings(listings) {
+            jobListingsContainer.innerHTML = "";
+             // Clear previous listings
+    
+            listings.forEach(job => {
+                const jobCard = document.createElement("div");
+                jobCard.classList.add("job-card");
+                jobCard.innerHTML = `
+                    <h3>${job.title}</h3>
+                    <p>Industry: ${job.industry}</p>
+                    <p>Location: ${job.location}</p>
+                    <p>Company: ${job.company}</p>
+                    <p>Salary: ${job.salary}</p>
+                    <p>Description: ${job.description}</p>
+                    <p>Requirements: ${job.requirements}</p>
+                `;
+                jobListingsContainer.appendChild(jobCard);
+            });
+        }
+     });
+     function openChat() {
+            // mylogic to open a chat window
+            alert("Open chat functionality goes here.");
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+        // Function to toggle the visibility of the "Talk with us" icon
+        function toggleTalkWithUs() {
+            const talkWithUs = document.getElementById("talkWithUs");
+            talkWithUs.style.display = (talkWithUs.style.display === 'none' || talkWithUs.style.display === '') ? 'block' : 'none';
+        }
+
+        // Initial toggle after the page loads
+        toggleTalkWithUs();
+
+        // Set interval to toggle the "Talk with us" icon every 2seconds
+        setInterval(toggleTalkWithUs, 2000);
+    });
+
+    // Fetch job listings using AJAX and update the content
+    fetch('get_jobs.php')
+        .then(response => response.json())
+        .then(data => {
+            const jobListingsContainer = document.getElementById('jobListingsContainer');
+            data.forEach(job => {
+                const jobCard = document.createElement('div');
+                jobCard.classList.add('job-card');
+                jobCard.innerHTML = `
+                    <h3>${job.title}</h3>
+                    <p>Industry: ${job.industry}</p>
+                    <p>Location: ${job.location}</p>
+                    <p>Company: ${job.company}</p>
+                    <p>Salary: ${job.salary}</p>
+                    <p>Description: ${job.description}</p>
+                    <p>Requirements: ${job.requirements}</p>
+                `;
+                jobListingsContainer.appendChild(jobCard);
+            });
+        })
+        .catch(error => console.error('Error fetching job listings:', error));
+    function toggleDarkMode() {
+        const body = document.body;
+        body.classList.toggle("dark-mode");
+
+        // Save the dark mode preference to the host storage
+        const isDarkMode = body.classList.contains("dark-mode");
+        localStorage.setItem("darkMode", isDarkMode);
+    }
+
+    // Check for dark mode preference on page load
+    document.addEventListener("DOMContentLoaded", function () {
+        const darkModePreference = localStorage.getItem("darkMode");
+        if (darkModePreference === "true") {
+            document.body.classList.add("dark-mode");
+        }
+    });
+
+    </script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+    <div id="jobListingsContainer"></div>
+
+    <script>
+        // Function to make a GET request to the backend API
+        function getJobListings() {
+            fetch('https://baytdb.com/job-listings')
+                .then(response => response.json())
+                .then(data => {
+                    // Process the JSON data
+                    console.log(data);
+
+                    // Call a function to update the frontend with the job listings
+                    updateJobListings(data);
+                })
+                .catch(error => console.error('Error fetching job listings:', error));
+        }
+
+        // Function to update the frontend with job listings
+        function updateJobListings(jobListings) {
+            const jobListingsContainer = document.getElementById('jobListingsContainer');
+
+            // Clear previous listings
+            jobListingsContainer.innerHTML = "";
+
+            // Display the new job listings
+            jobListings.forEach(job => {
+                const jobCard = document.createElement("div");
+                jobCard.classList.add("job-card");
+                jobCard.innerHTML = `
+                    <h3>${job.title}</h3>
+                    <p>Industry: ${job.industry}</p>
+                    <p>Location: ${job.location}</p>
+                    <p>Company: ${job.company}</p>
+                    <p>Salary: ${job.salary}</p>
+                    <p>Description: ${job.description}</p>
+                    <p>Requirements: ${job.requirements}</p>
+                `;
+                jobListingsContainer.appendChild(jobCard);
+            });
+        }
+
+        // Call the function to get job listings when the page loads
+        document.addEventListener("DOMContentLoaded", function () {
+            getJobListings();
+        });
