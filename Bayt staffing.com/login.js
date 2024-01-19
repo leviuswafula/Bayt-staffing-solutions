@@ -1,20 +1,39 @@
-document.getElementById('employerLoginForm').addEventListener('submit', function (e) {
-    e.preventDefault();
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    const loginButton = document.getElementById('loginButton');
+    loginButton.addEventListener('click',function () {
     
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
+        const formData = {
+            username: document.getElementById('loginusername').value,
+           
+            password: document.getElementById('loginpassword').value
+        };
 
-    // Perform client-side validation if needed
-
-    // Send login data to the server
-    fetch('/login', {
+        fetch('http://127.0.0.1:8000/authenticate/', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
+            'Content-Type': 'application/json',
         },
-        body: `email=${email}&password=${password}`,
+        body: JSON.stringify(formData),
     })
-    .then(response => response.text())
-    .then(data => alert(data))
-    .catch(error => console.error('Error:', error));
+    .then(response =>{
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(data => {
+        localStorage.setItem('access_token', data.access_token);
+        localStorage.setItem('refresh_token', data.refresh_token);
+
+        console.log('Registration successful:', data.access);
+        
+    })
+    .catch(error => {
+        console.error('Error during login:', error);
+        
+    });
+    });
+       
 });

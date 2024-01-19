@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="login.js"></script>
     <style>
         body {
     display: flex;
@@ -39,14 +40,14 @@ button {
 <body>
     <div class="login-container">
         <h2>Login</h2>
-        <form action="login_process.php" method="post">
+        <form >
             <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+            <input type="text" id="loginusername" name="username" required>
 
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="loginpassword" name="password" required>
 
-            <button type="submit">Login</button>
+            <button id= "loginButton"  type="button">Login</button>
         </form>
     </div>
 </body>
