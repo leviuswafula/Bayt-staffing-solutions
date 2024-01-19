@@ -1,21 +1,33 @@
-document.getElementById('employerRegistrationForm').addEventListener('submit', function (e) {
-    e.preventDefault();
+document.addEventListener('DOMContentLoaded', function() {
+    const registerButton = document.getElementById('registerButton');
+
+    registerButton.addEventListener('click',function () {
     
-    const companyName = document.getElementById('companyName').value;
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
+    const formData = {
+        username: document.getElementById('email').value,
+        first_name: document.getElementById('name').value,
+        
+        email: document.getElementById('email').value,
+        password: document.getElementById('password').value
+    };
 
-    // Perform client-side validation if needed
-
-    // Send registration data to the server
-    fetch('/register', {
+   
+    fetch('http://127.0.0.1:8000/user-register/', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
+            'Content-Type': 'application/json',
         },
-        body: `companyName=${companyName}&email=${email}&password=${password}`,
+        body: JSON.stringify(formData),
     })
-    .then(response => response.text())
-    .then(data => alert(data))
-    .catch(error => console.error('Error:', error));
+    .then(response => response.json())
+    .then(data => {
+        
+        console.log('Registration successful:', data);
+        
+    })
+    .catch(error => {
+        console.error('Error during registration:', error);
+        
+    });
+});
 });
