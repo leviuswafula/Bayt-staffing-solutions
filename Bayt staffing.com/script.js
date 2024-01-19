@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         const jobListingsContainer = document.getElementById("jobListings");
         const jobSearchInput = document.getElementById("jobSearch");
 
-        let url  = 'http://127.0.0.1:8080/jobs/';        
+        let url  = 'http://127.0.0.1:8000/premium-jobs/';        
             let response_data = await fetch(url); 
            
             if (response_data.status === 200) {  
@@ -29,6 +29,79 @@ document.addEventListener("DOMContentLoaded", async function () {
                     displayJobListings(filteredListings);
                 });
                 }
+
+
+                const accessToken = localStorage.getItem('access_token');
+
+                
+   
+                function refreshAccessToken() {
+                 const refreshToken = localStorage.getItem('refresh_token');
+                
+                   if (!refreshToken) {
+                     throw new Error("Refresh token not found");
+                   }
+                 
+                   
+                   fetch("http://127.0.0.1:8000/auth-refresh/", {
+                     method: "POST",
+                     headers: {
+                       "Content-Type": "application/json",
+                       "Authorization": "Bearer " + accessToken
+                       
+                       
+                     },
+                     body: JSON.stringify({ refresh: refreshToken  }),
+                   })
+                     .then((response) => {
+                       if (!response.ok) {
+                         throw new Error("Refresh token failed");
+                       }
+                       return response.json();
+                     })
+                     .then((data) => {
+                       localStorage.setItem('access_token', data.access);
+                       
+                     })
+                     .catch((error) => {
+                       console.error("Error refreshing access token:", error);
+                       
+                     });
+                 }
+                 refreshAccessToken()
+                fetch('http://127.0.0.1:8000/premium-jobs/', {
+                    method: 'GET',
+                    headers: {
+                        "Authorization": "Bearer " + accessToken
+                        // 'Authorization': `Bearer ${accessToken}`,
+                    },
+                })
+                .then(response => {
+                    if (response.ok) {
+                        
+                        return response.json();
+                        
+                    } else {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                })
+                .then(data => {
+                    displayJobListings(data);
+                    jobSearchInput.addEventListener("input", function () {
+                        const searchTerm = jobSearchInput.value.toLowerCase();
+                        const filteredListings = data.filter(job => job.name.toLowerCase().includes(searchTerm));
+                        displayJobListings(filteredListings);
+                    });
+                    
+                })
+                .catch(error => {
+                    console.error('Error during request:', error);
+                    
+                });
+
+
+
+
                 
         // Function to display job listings
         function displayJobListings(listings) {
@@ -40,12 +113,12 @@ document.addEventListener("DOMContentLoaded", async function () {
                 jobCard.classList.add("job-card");
                 jobCard.innerHTML = `
                     <h3>${job.name}</h3>
-                    <p>Indu   kbstry: ${job.industry}</p>
-                    <p>Locationmnjcdxmm: ${job.location}</p>
-                    <p>Company: ${job.company}</p>
-                    <p>Salary: ${job.salary}</p>    
-                    <p>Description: ${job.description}</p>
-                    <p>Requirements: ${job.requirements}</p>
+                    <p>Industry: ${job.industry}</p>
+                    <p>Location: ${job.location}</p>
+                    <p>Company: ${job.companyName}</p>
+                    <p>Salary: ${job.salaryRange}</p>    
+                    <p>Description: ${job.jobDescription}</p>
+                    <p>Requirements: ${job.jobRequirements}</p>
                 `;
                 jobListingsContainer.appendChild(jobCard);
             });
@@ -67,5 +140,6 @@ document.addEventListener("DOMContentLoaded", async function () {
 
         // Set interval to toggle the "Talk with us" icon every  seconds
         setInterval(toggleTalkWithUs, 5000);
-    });
+    }
+    );
     

@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
         return response.json();
     })
     .then(data => {
-        localStorage.setItem('access_token', data.access_token);
-        localStorage.setItem('refresh_token', data.refresh_token);
+        localStorage.setItem('access_token', data.access);
+        localStorage.setItem('refresh_token', data.refresh);
 
         console.log('Registration successful:', data.access);
         
@@ -35,5 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
         
     });
     });
+   
        
 });
